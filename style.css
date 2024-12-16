@@ -3,7 +3,6 @@
     font-family: Rosarivo;
     font-size: 1.3vw;
 }
-/* Основной контейнер */
 .slider-container {
     display: flex;
     flex-direction: column;
@@ -26,13 +25,11 @@
     margin-top: 10px;
 }
 
-/* Слайдер */
 .slider {
-    height: 600px; /* Высота видимой области */
+    height: 600px;
     overflow: hidden;
 }
 
-/* Элементы слайдера */
 .slider-item {
     text-align: center;
     padding: 10px;
@@ -83,7 +80,7 @@ main {
 
 .navigation {
     position: sticky;
-    top: 30px;
+    top: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,14 +88,14 @@ main {
     gap: 5px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin-left: 50px;
-    width: 200px;
-    height: 900px;
+    margin-left: 5%;
+    width: 11vw;
+    height: 90vh;
 }
 
 .status {
     display: flex;
-    width: 800px;
+    width: 30vw;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -110,8 +107,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
     border-radius: 60px;
     background-color: #AC8F64;
 }
@@ -122,8 +119,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     background-color: #8a2727;
     color: #F4F4F4;
     border-radius: 50px;
@@ -138,7 +135,7 @@ main {
 
 .coffees {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 23vw 23vw 23vw;
     gap: 30px;
 }
 
@@ -149,8 +146,8 @@ main {
     justify-content: space-between;
     background-color: #FFFFFF;
     border-radius: 20px;
-    height: 300px;
-    padding: 50px;
+    height: 30vh;
+    padding: 5vh;
     margin: 3px;
 }
 
@@ -163,7 +160,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 120px;
+    width: 8vw;
     gap: 3px;
     background-color: #DADADA;
     border-radius: 5px;
@@ -183,7 +180,7 @@ main {
     background-color: #F4F4F4;
     width: 0%;
     height: 100%;
-    padding: 50px;
+    padding: 4vw;
     top: 0;
     left: 70%;
     gap: 20px;
@@ -238,14 +235,14 @@ main {
 }
 
 .orderimage {
-    width: 800px;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .orderimage img {
-    width: 600px;
+    width: 22vw;
 }
 
 .coffeesizes, .coffeesugar, .coffeemilks {
@@ -313,8 +310,9 @@ main {
     width: 100%;
 }
 
+
 .ordered-coffee-block img {
-    width: 100px;
+    width: 6vw;
 }
 
 .block-count {
@@ -348,3 +346,64 @@ main {
     justify-content: space-between;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    * {
+        font-size: 3vw;
+    }
+    .navigation {
+      display: none !important;
+    }
+
+    main {
+        margin-left: 10%;
+    }
+
+    .coffees {
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .rightside {
+        width: 60vw !important;
+        left: 30%;
+    }
+
+    .coffeecard {
+        height: 30vw;
+        width: 25vw;
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    * {
+        font-size: 3vw;
+    }
+
+    .navigation {
+        display: none !important;
+      }
+    main {
+        margin-left: 10%;
+    }
+
+    .coffees {
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .coffeecard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        height: 60vw;
+        padding: 5vw;
+        margin: 3px;
+    }
+
+
+    .rightside {
+        width: 90% !important;
+        left: 0;
+    }
+}
