@@ -1,2 +1,0 @@
-# coffe-shop
-Author - Oksana

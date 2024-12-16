@@ -3,13 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe shop</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link href="style.css" type="text/css" rel="stylesheet">    
+    <title>Coffee shop</title>
 </head>
 <body>
-    
+    <div class="navigation">
+        <!-- Слайдер -->
+<div class="slider-container">
+    <button class="arrow up" onclick="slideUp()">&#9650;</button>
+    <div class="slider">
+        <div class="slider-item selected" data-target="cappuccino" id="cappuccino">
+            <img src="images/cappuccino.png" alt="Cappuccino">
+            <p>Cappuccino</p>
+        </div>
+        <div class="slider-item" data-target="latte" id="latte">
+            <img src="images/latte.png" alt="Latte">
+            <p>Latte</p>
+        </div>
+        <div class="slider-item" data-target="americano" id="americano">
+            <img src="images/americano.png" alt="Americano">
+            <p>Americano</p>
+        </div>
+        <div class="slider-item" data-target="espresso" id="espresso">
+            <img src="images/espresso.jpg" alt="Espresso">
+            <p>Espresso</p>
+        </div>
+        <div class="slider-item" data-target="flat-white" id="flat-white">
+            <img src="images/flat-white.png" alt="Flat White">
+            <p>Flat White</p>
+        </div>
+    </div>
+    <button class="arrow down" onclick="slideDown()">&#9660;</button>
+</div>
 
+
+        
+    </div>
+    
+    <main>
+        <nav>
+            <input type="text" id="search" placeholder="Browse your favourite coffee here...">
+            <div class="status" onclick="OpenMenu()">
+                <div class="statusimage">
+                    <img src="images/order.png">
+                </div>
+                <p>Order status</p>
+                <div class="statuscount">
+                    <p class="ordercount">0</p>
+                </div>
+            </div>
+        </nav>
+        <div class="coffees">
+            
+        </div>
+    </main>
+    <div class="rightside">
+        <div class="righthead">
+            <p>Order Status</p>
+            <div class="closebutton" onclick="CloseMenu()">
+                <p>Back</p>
+                <img src="images/right-arrow.png">
+            </div>
+        </div>
+        <div class="categoryes">
+            <div class="category">
+                <p>Ordered</p>
+                <div id="ordered" class="category">
+
+                </div>
+            </div>
+            <div class="category">
+                <p>Preparing</p>
+                <div id="preparing" class="category">
+                    
+                </div>
+            </div>
+            <div class="category">
+                <p>Finishing</p>
+                <div id="finishing" class="category">
+                    
+                </div>
+            </div>
+            <div class="category">
+                <p>Served</p>
+                <div id="served" class="category">
+                    
+                </div>
+            </div>
+            
+            <div class="prices">
+
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <nav>
+            <div class="backbutton" onclick="CloseOrderMenu()">
+                <img src="images/left-arrow.png">
+                <p>BACK TO MENU</p>
+            </div>
+            <div class="status">
+                <div class="statusimage">
+                    <img src="images/order.png">
+                </div>
+                <p>Order status</p>
+                <div class="statuscount">
+                    <p class="ordercount">0</p>
+                </div>
+            </div>
+        </nav>
+        <div class="coffeeord">
+            <div class="orderimage">
+
+            </div>
+            <div id="coffeeord">
+
+            </div>
+        </div>
+    </div>
 </body>
-<script src="js/code.js"></script>
+<script src="code.js"></script>
 </html>
